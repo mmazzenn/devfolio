@@ -1,0 +1,237 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Start Global */
+@media screen and (max-width: 335px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .main-title .heading {
+    font-size: 2rem;
+  }
+}
+
+/* End Global */
+
+/* Start Navbar */
+
+@media screen and (max-width: 1650px) {
+  nav .deep-dropdown {
+    right: auto;
+    left: -90%;
+  }
+
+  nav .deep-dropdown-link:hover .deep-dropdown {
+    right: auto;
+    left: calc(-100% - 0.625rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-item:last-of-type .nav-link {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .nav-icon {
+    display: block;
+  }
+
+  nav .nav-links {
+    display: none;
+  }
+
+  body:has(.nav-links:target) nav .nav-icon {
+    display: none;
+  }
+
+  body:has(.nav-links:target) nav .close-icon {
+    display: block;
+  }
+
+  body:has(.nav-links:target) nav.navbar {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+  }
+
+  body:has(.nav-links:target) nav .responsive-nav {
+    background-color: rgba(78, 78, 78, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 999;
+    -webkit-transition: all var(--main-time);
+    -o-transition: all var(--main-time);
+    transition: all var(--main-time);
+  }
+
+  body:has(.nav-links:target) nav .nav-links {
+    display: block;
+    position: absolute;
+    top: 3.4375rem;
+    left: 0.9375rem;
+    right: 0.9375rem;
+    bottom: 0.9375rem;
+    padding: 0.625rem 0;
+    background-color: #fff;
+    margin-bottom: 0 !important;
+    overflow-y: auto;
+    z-index: 9999;
+    font-size: 0.9375rem;
+  }
+
+  body:has(.nav-links:target) nav .nav-links .nav-link {
+    color: var(--secondary-color);
+    padding: 0.625rem 1.5rem;
+  }
+
+  body:has(.nav-links:target) nav .nav-link::after {
+    display: none;
+  }
+
+  body:not(body:has(:target)) nav .nav-link[href="#home"],
+  body:has(.home:target) nav .nav-link[href="#home"],
+  body:has(.about:target) nav .nav-link[href="#about"],
+  body:has(.services:target) nav .nav-link[href="#services"],
+  body:has(.work:target) nav .nav-link[href="#work"],
+  body:has(.blog:target) nav .nav-link[href="#blog"],
+  body:has(.contact:target) nav .nav-link[href="#contact"],
+  nav .nav-link:hover {
+    color: var(--main-color) !important;
+  }
+
+  nav .dropdown,
+  nav .deep-dropdown {
+    position: static !important;
+    visibility: visible;
+    display: none;
+    opacity: 1;
+    width: 95%;
+    margin: auto;
+    -webkit-transition: all var(--main-time);
+    -o-transition: all var(--main-time);
+    transition: all var(--main-time);
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    background-color: #fff !important;
+  }
+
+  body:has(.menu-one:checked) nav .dropdown,
+  body:has(.menu-two:checked) nav .deep-dropdown {
+    display: block;
+  }
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+@media screen and (max-width: 768px) {
+  .home .content h2 {
+    font-size: 3rem;
+  }
+
+  .home .content h3 {
+    font-size: 1.5rem;
+    height: 1.875rem;
+  }
+
+  :root {
+    --animation-des: 6.5625rem;
+    --animation-de: 2rem;
+    --animation-dev: 7.5rem;
+    --animation-fre: 7.5rem;
+    --animation-pho: 10rem;
+    --animation-border-width: 0.1875rem;
+  }
+}
+
+/* End Header */
+
+/* Start About */
+
+@media screen and (max-width: 576px) {
+  .about .about-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .about .about-info picture,
+  .about .about-info .about-info-data {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 245px) {
+  .about .about-me {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* End About */
+
+/* Start Testimonials */
+
+@media screen and (max-width: 1200px) {
+  .testimonials .carousel-inner p {
+    width: 80%;
+  }
+}
+
+/* End Testimonials */
+
+/* Start Blog */
+@media screen and (max-width: 250px) {
+  .blog .card .card-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0.5rem;
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+}
+
+/* End Blog */
+
+/* Start Contact */
+
+@media screen and (max-width: 250px) {
+  .contact .contact-info .social-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0.625rem;
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+  }
+}
+
+/* End Contact */
